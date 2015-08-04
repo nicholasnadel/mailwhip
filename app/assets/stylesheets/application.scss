@@ -13,5 +13,152 @@
  *= require_tree .
  *= require_self
  */
+ /*
+ *= require font-awesome
+ */
  @import "bootstrap-sprockets";
  @import "bootstrap";
+ @import url(http://fonts.googleapis.com/css?family=Lato:400,300,700);
+
+ * {
+   font-family: 'Lato', sans-serif;
+   }
+ .header {
+ 	background:
+ 		linear-gradient(
+ 			rgba(0, 0, 0, 0.5),
+ 			rgba(0, 0, 0, 0.5)
+ 		),
+ 		url('portafilter.jpg');
+   background-position: relative;
+   background-size:  cover;
+   background-position: top center;
+   background-attachment: fixed;
+   width:100vw !important;
+   height: 100vh !important;
+   color: #222;
+   z-index: -9999;
+   background-repeat: no-repeat !important;
+ }
+
+
+.welcome h1, h2, h3 {
+   color: #FAFAFA;
+   display: inline-block;
+   position: relative;
+   text-align: center;
+   width: 100%;
+   font-family: 'Lato', sans-serif;
+ }
+
+ .welcome h1 {
+   font-size: 4em;
+   font-weight: 300;
+ }
+
+.welcome h2 {
+   font-size: 2em;
+   font-weight: 300;
+    margin-bottom:5%;
+ }
+
+ .modal-body h2 {
+   color: #212121;
+ }
+
+.nav {
+  background-color: rgba(34, 34, 34, .1);
+  width: 100%;
+	padding: 2%;
+  border-bottom: none;
+}
+
+.nav a, li, ul {
+  display: inline-block;
+	float: none;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  -o-transition:color .5s ease-out, background .5s ease-in;
+  -ms-transition:color .5s ease-out, background .5s ease-in;
+  -moz-transition:color .5s ease-out, background .5s ease-in;
+  -webkit-transition:color .5s ease-out, background .5s ease-in;
+  /* ...and now override with proper CSS property */
+  transition:color .5s ease-out, background .5s ease-in;
+	letter-spacing: .1em;
+	color: #F5F5F5;
+	-webkit-text-stroke: .5px #535353;
+}
+
+
+.centered
+{
+    text-align:center;
+}
+
+.bottom {
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  #FAFAFA-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: #FAFAFA;
+  position:relative;
+}
+
+.social-media, .alert, .alert-success {
+  background-color: white;
+  width: 50%;
+  size: 5em;
+  margin: auto;
+  text-align: center;
+  display: block;
+  border: 5px solid #212121;
+}
+.alert, .alert-success p {
+  font-family: 'Lato', sans-serif;
+  color: black;
+  margin-bottom: 5%;
+}
+
+
+.social-media, .alert, .alert-success a {
+  color: #212121;
+}
+
+.social-media, .alert, .alert-success a:hover {
+  color: #E91E63;
+  background-color: none;
+  border: none;
+  outline: 0;
+  border-bottom: none;
+  padding: 2%;
+}
+
+
+body > #main {
+position: fixed;
+width: 100%;
+height: 100%;
+overflow: auto;
+}
+
+footer {
+position: absolute;
+bottom: 0px;
+background-color: yellow;
+z-index: 999;
+}

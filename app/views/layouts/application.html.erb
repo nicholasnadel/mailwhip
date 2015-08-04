@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mailwhip</title>
+  <title>Terroir Coffee</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
+  <div class="header">
   <ul class="nav nav-tabs">
-    <li><%= link_to "MailWhip", welcome_index_path %></li>
+    <li><%= link_to "Terroir Coffee", welcome_index_path %></li>
   </ul>
-</div>
-
 <% if flash[:notice] %>
   <div class="alert alert-success">
     <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <%= flash[:notice] %>
+    <p>  Thanks for signing up!<br/>
+      <br/>We'll write you shortly.<br/><br/>
+      In the meantime, sharing is caring...</p>
+    <a href="www.twitter.com"><i class="fa fa-twitter  fa-5x"></i></a>
+    <a href="www.facebook.com"<i class="fa fa-facebook-official  fa-5x"></i></a>
+    </div>
   </div>
 <% elsif flash[:error] %>
   <div class="alert alert-danger">
@@ -31,6 +37,7 @@
 <% end %>
 
 <%= yield %>
+
 
 </body>
 </html>

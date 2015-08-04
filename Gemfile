@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 #style
 gem 'bootstrap-sass'
+gem 'shareable'
+gem "font-awesome-rails"
 
 # auth
 gem 'devise'
